@@ -1,5 +1,5 @@
 # Команда запуска нагрузки
-
+`k port-forward --namespace monitoring <grafana_pod_name> 3000:3000`
 `k6 run --vus 5 --duration 10m --rps 10 k6.js`
 
 # Конфигурация для k6
